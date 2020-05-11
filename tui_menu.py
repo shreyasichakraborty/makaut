@@ -29,11 +29,7 @@ if location==1:
         8.Delete user
         9.Create a file
         10.Create a folder
-        11.Create Partition
-        12.
-        13.
-        14.
-        15.Exit""")
+        11.Exit""")
 
         ch=int(input("Enter your choice: "))
 
@@ -71,7 +67,7 @@ if location==1:
             os.system("sudo mkdir {}".format(foldername))
             
 
-        elif ch==15:
+        elif ch==11:
             print("Exiting application")
             exit()
         else:
@@ -101,11 +97,7 @@ elif location==2:
         8.Delete user
         9.Create a file
         10.Create a folder
-        11.Create Partition
-        12.
-        13.
-        14.
-        15.Exit""")
+        11.Exit""")
 
         ch=int(input("Enter your choice: "))
 
@@ -141,7 +133,7 @@ elif location==2:
             foldername=input("Enter the filename")
             os.system("ssh root@{} mkdir {}".format(ip,foldername))
             
-        elif ch==15:
+        elif ch==11:
             print("Exiting application")
             exit()
         else:
